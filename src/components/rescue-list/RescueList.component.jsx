@@ -29,8 +29,7 @@ export default class RescueList extends Component {
       });
   };
 
-  renderRescueCards = () => {
-    let { rescues } = this.state;
+  renderRescueCards = (rescues) => {
     if (rescues.length >= 1) {
       return rescues.map(({ id, ...rescueData }) => {
         console.log(rescueData)
@@ -46,7 +45,7 @@ export default class RescueList extends Component {
         <section id="rescue-list">
           <Grid columns={3} divided>
             <Grid.Row>
-              {rescues.length >= 1 ? this.renderRescueCards() : "No"}
+              {rescues.length >= 1 ? this.renderRescueCards(rescues) : "No"}
             </Grid.Row>
           </Grid>
         </section>

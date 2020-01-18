@@ -1,0 +1,40 @@
+#navbar {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  .logo-container {
+    height: 100%;
+    // width: 50px;
+    padding: 25px;
+    display: inline-block;
+    .logo {
+      display: inline;
+      width: 50px;
+    }
+    .logo-title {
+      font-size: 30px;
+      font-weight: bold;
+      display: inline;
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+  }
+
+  .options {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .option {
+      padding: 10px 15px;
+    }
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+}
