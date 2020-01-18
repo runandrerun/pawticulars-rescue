@@ -1,11 +1,11 @@
 import React from 'react';
-import RescueContainer from './RescueContainer';
-import '../styles/App.css';
+import RescueList from '../rescue-list/RescueList.component';
+import './App.styles.scss';
 
 function App() {
   return (
     <div className="App">
-      <RescueContainer />
+      <RescueList />
     </div>
   );
 }
