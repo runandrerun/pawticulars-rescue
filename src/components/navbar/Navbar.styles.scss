@@ -7,7 +7,6 @@
 
   .logo-container {
     height: 100%;
-    // width: 50px;
     padding: 25px;
     display: inline-block;
     .logo {
@@ -15,9 +14,10 @@
       width: 50px;
     }
     .logo-title {
+      height: 100%;
+      display: inline-block;
       font-size: 30px;
       font-weight: bold;
-      display: inline;
       @media only screen and (max-width: 600px) {
         display: none;
       }
@@ -31,6 +31,8 @@
     align-items: center;
     justify-content: flex-end;
     .option {
+      font-size: 30px;
+      font-weight: 800;
       padding: 10px 15px;
     }
     @media only screen and (max-width: 600px) {

@@ -1,0 +1,74 @@
+.hero {
+  height: 95vh;
+  width: 100%;
+  background-image:
+    linear-gradient(to right bottom, rgba(255, 111, 97, 0.6), rgba(255, 78, 61, 0.6)),
+    url('../../_assets/img/hero-splash.jpg');
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  .hero-splash {
+    height: 100%;
+    width: 100%;
+  }
+
+  .logo {
+    width: 40px;
+    height: auto;
+  }
+
+  .hero-heading-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .hero-heading {
+      color: #ffffff;
+      text-transform: uppercase;
+      font-weight: 400;
+      &-primary {
+        display: block;
+        font-size: 60px;
+        letter-spacing: 25px;
+        animation: slideFromLeft 2s forwards;
+      }
+
+      &-sub {
+        display: block;
+        font-size: 20px;
+        letter-spacing: 15px;
+        animation: slideFromRight 2s forwards;
+      }
+
+      @keyframes slideFromLeft {
+        0% {
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+        80% {
+          transform: translateX(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes slideFromRight {
+        0% {
+          opacity: 0;
+          transform: translateX(100px);
+        }
+        80% {
+          transform: translateX(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+}

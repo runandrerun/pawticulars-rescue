@@ -1,13 +1,15 @@
 import React from 'react';
 import RescueList from '../../components/rescue-list/RescueList.component';
 import Navbar from '../../components/navbar/Navbar.component';
+import Hero from '../../components/hero/Hero.component';
+import './Homepage.styles.scss';
 
 const Homepage = () => {
   return (
-    <div className="homepage">
-      <Navbar />
+    <section id="homepage">
+      <Hero />
       <RescueList />
-    </div>
+    </section>
   );
 };
 

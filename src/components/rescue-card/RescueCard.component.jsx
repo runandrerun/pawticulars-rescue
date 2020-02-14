@@ -1,14 +1,11 @@
 import React from 'react';
-import { Grid } from 'semantic-ui-react';
 
 const RescueCard = ({ rescue }) => {
   console.log(rescue)
   return (
-    <Grid.Column>
-      <div id={rescue.id}>
-        {rescue.type}
-      </div>
-    </Grid.Column>
+    <div id={rescue.id}>
+      {rescue.type}
+    </div>
   );
 };
 

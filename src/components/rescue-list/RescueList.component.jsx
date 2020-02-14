@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import Loader from '../loader/Loader.component';
 import RescueCard from '../rescue-card/RescueCard.component';
-import { Grid } from 'semantic-ui-react';
 import { fetchOauth } from '../../adapters';
 import './RescueList.styles.scss';
 
@@ -19,14 +19,14 @@ export default class RescueList extends Component {
     this.setState({
       loading: true
     });
-    return fetchOauth()
-      .then(res => {
-        return this.setState({
-          rescues: res.animals,
-          fetched: true,
-          loading: true,
-        })
-      });
+    // return fetchOauth()
+    //   .then(res => {
+    //     return this.setState({
+    //       rescues: res.animals,
+    //       fetched: true,
+    //       loading: true,
+    //     })
+    //   });
   };
 
   renderRescueCards = (rescues) => {
@@ -42,21 +42,13 @@ export default class RescueList extends Component {
     const { fetched, loading, rescues } = this.state;
     if (fetched) {
       return (
-        <section id="rescue-list">
-          <Grid columns={3} divided>
-            <Grid.Row>
-              {rescues.length >= 1 ? this.renderRescueCards(rescues) : "No"}
-            </Grid.Row>
-          </Grid>
-        </section>
+        <div id="rescue-list">
+          {rescues.length >= 1 ? this.renderRescueCards(rescues) : "No"}
+        </div>
       );
     } else if (loading && !fetched) {
       return  (
-        <div className="container loader">
-          <div className="spinner-border text-primary" role="status">
-            <span className="sr-only">Loading...</span>
-          </div>
-        </div>
+        <Loader />
       );
     } else {
       return <div/>
