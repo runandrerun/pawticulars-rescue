@@ -1,8 +1,10 @@
+@import '../../_assets/css/_mixins.scss';
+
 .hero {
   height: 95vh;
   width: 100%;
   background-image:
-    linear-gradient(to right bottom, rgba(255, 111, 97, 0.6), rgba(255, 78, 61, 0.6)),
+    linear-gradient(to right bottom, rgba($brand-color, 0.6), rgba($brand-color-dark, 0.6)),
     url('../../_assets/img/hero-splash.jpg');
   background-size: cover;
   background-position: center;
@@ -30,17 +32,14 @@
     text-align: center;
 
     .btn:link, .btn:visited {
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 15px 40px;
-      border-radius: 100px;
+      @include style-link-text($primary-body-color);
       display: inline-block;
       transition: all 0.2s;
       position: relative;
 
       &:hover {
         transform: translateY(-3px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
         &::after {
           transform: scaleX(1.4) scaleY(1.6);
           opacity: 0;
@@ -49,7 +48,7 @@
 
       &:active {
         transform: translateY(-1px);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
       }
 
       &::after {
@@ -72,28 +71,20 @@
     }
 
     @keyframes slideFromBottom {
-      0% {
-        opacity: 0;
-        transform: translateY(100px);
-      }
-      80% {
-        transform: translateY(-10px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      0% { opacity: 0; transform: translateY(100px); }
+      80% { transform: translateY(-10px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
 
     .btn-white {
-      background-color: #ffffff;
+      background-color: $color-white;
       &::after {
         background-color: inherit;
       }
     }
 
     .hero-heading {
-      color: #ffffff;
+      color: $color-white;
       text-transform: uppercase;
       font-weight: 400;
       backface-visibility: hidden;
@@ -114,32 +105,17 @@
       }
 
       @keyframes slideFromLeft {
-        0% {
-          opacity: 0;
-          transform: translateX(-100px);
-        }
-        80% {
-          transform: translateX(10px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateX(0);
-        }
+        0% { opacity: 0; transform: translateX(-100px); }
+        80% { transform: translateX(10px); }
+        100% { opacity: 1; transform: translateX(0); }
       }
 
       @keyframes slideFromRight {
-        0% {
-          opacity: 0;
-          transform: translateX(100px);
-        }
-        80% {
-          transform: translateX(-10px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateX(0);
-        }
+        0% { opacity: 0; transform: translateX(100px); }
+        80% { transform: translateX(-10px); }
+        100% { opacity: 1; transform: translateX(0); }
       }
     }
+
   }
 }

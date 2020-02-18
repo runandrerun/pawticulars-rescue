@@ -1,17 +1,23 @@
-* {
+@import './_assets/css/_mixins.scss';
+
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
+html {
+  font-size: 62.5%;
+}
 body {
-  color: #292929;
-  font-size: 16px;
+  color: $primary-body-color;
+  // font-size: 16px;
   line-height: 1.7;
   font-weight: 400;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  // padding: 3rem;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

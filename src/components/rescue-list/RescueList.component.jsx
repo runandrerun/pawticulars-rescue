@@ -33,7 +33,7 @@ export default class RescueList extends Component {
     if (rescues.length >= 1) {
       return rescues.map(({ id, ...rescueData }) => {
         console.log(rescueData)
-        return <RescueCard key={id} rescue={rescueData} />
+        return <RescueCard key={id} {...rescueData} />
       });
     };
   };
