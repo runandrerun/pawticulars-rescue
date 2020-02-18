@@ -1,0 +1,33 @@
+$primary-body-color: #292929;
+$brand-color: #FA7268;
+$brand-color-dark: darken($brand-color, 15%);
+$brand-color-light: lighten($brand-color, 5%);
+$color-black: #000000;
+$color-white: #ffffff;
+$gray-splash: #777777;
+
+@mixin clearfix {
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
+
+@mixin style-link-text($color) {
+  font-size: 1.6rem;
+  padding: 15px 40px;
+  border-radius: 10rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color;
+}
+
+
+%btn-placeholder {
+  padding: 15px 40px;
+  border-radius: 100px;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+}
