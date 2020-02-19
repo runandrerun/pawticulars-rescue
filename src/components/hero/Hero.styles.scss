@@ -17,9 +17,9 @@
 
   .logo-container {
     text-align:left;
-    padding: 20px;
+    padding: 2rem;
     .logo {
-      width: 50px;
+      width: 5rem;
       height: auto;
     }
   }
@@ -38,7 +38,7 @@
       position: relative;
 
       &:hover {
-        transform: translateY(-3px);
+        transform: translateY(-.3rem);
         box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
         &::after {
           transform: scaleX(1.4) scaleY(1.6);
@@ -47,7 +47,7 @@
       }
 
       &:active {
-        transform: translateY(-1px);
+        transform: translateY(-.1rem);
         box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
       }
 
@@ -56,7 +56,7 @@
         display: inline-block;
         height: 100%;
         width: 100%;
-        border-radius: 100px;
+        border-radius: 10rem;
         position: absolute;
         top: 0;
         left: 0;
@@ -71,8 +71,8 @@
     }
 
     @keyframes slideFromBottom {
-      0% { opacity: 0; transform: translateY(100px); }
-      80% { transform: translateY(-10px); }
+      0% { opacity: 0; transform: translateY(10rem); }
+      80% { transform: translateY(-1rem); }
       100% { opacity: 1; transform: translateY(0); }
     }
 
@@ -91,28 +91,29 @@
 
       &-primary {
         display: block;
-        font-size: 60px;
-        letter-spacing: 25px;
+        font-size: 6rem;
+        letter-spacing: 2.5rem;
         animation: slideFromLeft 2s ease-out;
       }
 
       &-sub {
         display: block;
-        font-size: 20px;
-        letter-spacing: 15px;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.5rem;
         animation: slideFromRight 2s ease-out;
-        margin-bottom: 60px;
+        margin-bottom: 6rem;
       }
 
       @keyframes slideFromLeft {
-        0% { opacity: 0; transform: translateX(-100px); }
-        80% { transform: translateX(10px); }
+        0% { opacity: 0; transform: translateX(-10rem); }
+        80% { transform: translateX(1rem); }
         100% { opacity: 1; transform: translateX(0); }
       }
 
       @keyframes slideFromRight {
-        0% { opacity: 0; transform: translateX(100px); }
-        80% { transform: translateX(-10px); }
+        0% { opacity: 0; transform: translateX(10rem); }
+        80% { transform: translateX(-1rem); }
         100% { opacity: 1; transform: translateX(0); }
       }
     }
