@@ -1,5 +1,6 @@
-@import './_assets/css/_variables.scss';
-@import './_assets/css/_mixins.scss';
+@import './_assets/css/abstracts/_variables.scss';
+@import './_assets/css/abstracts/_mixins.scss';
+@import './_assets/css/base/_typography.scss';
 
 *,
 *::after,
@@ -13,12 +14,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  color: $primary-body-color;
-  font-size: 1rem;
-  line-height: 1.7;
-  font-weight: 400;
+  @include typography;
   padding: 3rem;
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
