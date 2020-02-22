@@ -1,3 +1,4 @@
+@import './_assets/css/_variables.scss';
 @import './_assets/css/_mixins.scss';
 
 *,
@@ -9,7 +10,7 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 body {
   color: $primary-body-color;

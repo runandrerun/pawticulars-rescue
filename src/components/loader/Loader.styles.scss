@@ -1,14 +1,16 @@
+@import '../../_assets/css/_variables.scss';
+
 .loader-container {
   text-align: center;
   margin: 0 auto;
 
   .loader {
     text-align: center;
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #FA7268;
+    border: .8rem solid $loader-splash;
+    border-top: .8rem solid $brand-color;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
     animation: spin 1.5s linear infinite;
   }
 
