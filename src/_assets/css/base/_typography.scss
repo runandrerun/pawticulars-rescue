@@ -1,0 +1,9 @@
+@mixin typography {
+  color: $primary-body-color;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

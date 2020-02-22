@@ -1,5 +1,7 @@
-@import '../../_assets/css/_variables.scss';
-@import '../../_assets/css/_mixins.scss';
+@import '../../_assets/css/abstracts/_variables.scss';
+@import '../../_assets/css/abstracts/_mixins.scss';
+@import '../../_assets/css/abstracts/_animations.scss';
+@import '../../_assets/css/components/_button.scss';
 
 .hero {
   height: 95vh;
@@ -27,61 +29,6 @@
     transform: translate(-50%, -50%);
     text-align: center;
 
-    .btn {
-      &:link, &:visited {
-        @include style-link-text($primary-body-color);
-        display: inline-block;
-        transition: all 0.2s;
-        position: relative;
-
-        &:hover {
-          transform: translateY(-.3rem);
-          box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-          &::after {
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;
-          }
-        }
-
-        &:active {
-          transform: translateY(-.1rem);
-          box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
-        }
-
-        &::after {
-          content: '';
-          display: inline-block;
-          height: 100%;
-          width: 100%;
-          border-radius: 10rem;
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: -1;
-          transition: all 0.4s;
-        }
-      }
-
-      &--white {
-        background-color: $color-white;
-        &::after {
-          background-color: inherit;
-        }
-      }
-
-      &--animated {
-        animation: slideFromBottom .5s ease-out .75s;
-        animation-fill-mode: backwards;
-      }
-      
-      @keyframes slideFromBottom {
-        0% { opacity: 0; transform: translateY(10rem); }
-        80% { transform: translateY(-1rem); }
-        100% { opacity: 1; transform: translateY(0); }
-      }
-    }
-
-
     .heading {
       color: $color-white;
       text-transform: uppercase;
@@ -103,19 +50,6 @@
         animation: slideFromRight 2s ease-out;
         margin-bottom: 6rem;
       }
-
-      @keyframes slideFromLeft {
-        0% { opacity: 0; transform: translateX(-10rem); }
-        80% { transform: translateX(1rem); }
-        100% { opacity: 1; transform: translateX(0); }
-      }
-
-      @keyframes slideFromRight {
-        0% { opacity: 0; transform: translateX(10rem); }
-        80% { transform: translateX(-1rem); }
-        100% { opacity: 1; transform: translateX(0); }
-      }
     }
-
   }
 }

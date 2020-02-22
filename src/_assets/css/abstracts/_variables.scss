@@ -1,3 +1,5 @@
+// colors
+
 $primary-body-color: #292929;
 $brand-color: #FA7268;
 $brand-color-dark: darken($brand-color, 15%);
@@ -6,3 +8,9 @@ $color-black: #000000;
 $color-white: #ffffff;
 $gray-splash: #777777;
 $loader-splash: #f3f3f3;
+
+// grid
+
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;

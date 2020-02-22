@@ -1,4 +1,5 @@
-@import '../../_assets/css/_variables.scss';
+@import '../../_assets/css/abstracts/_variables.scss';
+@import '../../_assets/css/abstracts/_animations.scss';
 
 .loader-container {
   text-align: center;
@@ -12,10 +13,5 @@
     width: 4rem;
     height: 4rem;
     animation: spin 1.5s linear infinite;
-  }
-
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
   }
 }
