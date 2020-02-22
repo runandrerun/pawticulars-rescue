@@ -1,3 +1,4 @@
+@import '../../_assets/css/_variables.scss';
 @import '../../_assets/css/_mixins.scss';
 
 .hero {
@@ -10,12 +11,7 @@
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
-  .hero-splash {
-    height: 100%;
-    width: 100%;
-  }
-
-  .logo-container {
+  &__logo-container {
     text-align:left;
     padding: 2rem;
     .logo {
@@ -24,79 +20,82 @@
     }
   }
 
-  .hero-heading-container {
+  &__heading-container {
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 
-    .btn:link, .btn:visited {
-      @include style-link-text($primary-body-color);
-      display: inline-block;
-      transition: all 0.2s;
-      position: relative;
+    .btn {
+      &:link, &:visited {
+        @include style-link-text($primary-body-color);
+        display: inline-block;
+        transition: all 0.2s;
+        position: relative;
 
-      &:hover {
-        transform: translateY(-.3rem);
-        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+        &:hover {
+          transform: translateY(-.3rem);
+          box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+          &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+          }
+        }
+
+        &:active {
+          transform: translateY(-.1rem);
+          box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
+        }
+
         &::after {
-          transform: scaleX(1.4) scaleY(1.6);
-          opacity: 0;
+          content: '';
+          display: inline-block;
+          height: 100%;
+          width: 100%;
+          border-radius: 10rem;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          transition: all 0.4s;
         }
       }
 
-      &:active {
-        transform: translateY(-.1rem);
-        box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
+      &--white {
+        background-color: $color-white;
+        &::after {
+          background-color: inherit;
+        }
       }
 
-      &::after {
-        content: '';
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        border-radius: 10rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: all 0.4s;
+      &--animated {
+        animation: slideFromBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
       }
-    }
-
-    .btn-animated {
-      animation: slideFromBottom .5s ease-out .75s;
-      animation-fill-mode: backwards;
-    }
-
-    @keyframes slideFromBottom {
-      0% { opacity: 0; transform: translateY(10rem); }
-      80% { transform: translateY(-1rem); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-
-    .btn-white {
-      background-color: $color-white;
-      &::after {
-        background-color: inherit;
+      
+      @keyframes slideFromBottom {
+        0% { opacity: 0; transform: translateY(10rem); }
+        80% { transform: translateY(-1rem); }
+        100% { opacity: 1; transform: translateY(0); }
       }
     }
 
-    .hero-heading {
+
+    .heading {
       color: $color-white;
       text-transform: uppercase;
       font-weight: 400;
       backface-visibility: hidden;
 
-      &-primary {
+      &--primary {
         display: block;
         font-size: 6rem;
         letter-spacing: 2.5rem;
         animation: slideFromLeft 2s ease-out;
       }
 
-      &-sub {
+      &--sub {
         display: block;
         font-size: 2rem;
         font-weight: 700;

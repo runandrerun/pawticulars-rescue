@@ -1,17 +1,15 @@
-$primary-body-color: #292929;
-$brand-color: #FA7268;
-$brand-color-dark: darken($brand-color, 15%);
-$brand-color-light: lighten($brand-color, 5%);
-$color-black: #000000;
-$color-white: #ffffff;
-$gray-splash: #777777;
-
 @mixin clearfix {
   &::after {
     content: '';
     clear: both;
     display: table;
   }
+}
+
+@mixin responsive-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @mixin style-link-text($color) {
@@ -21,6 +19,12 @@ $gray-splash: #777777;
   text-decoration: none;
   text-transform: uppercase;
   color: $color;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $opacity) {
+  -webkit-box-shadow: $top $left $blur $color $opacity;
+  -moz-box-shadow: $top $left $blur $color $opacity;
+  box-shadow: $top $left $blur $color $opacity;
 }
 
 

@@ -5,18 +5,18 @@ import './Hero.styles.scss';
 const Hero = () => {
   return (
     <div className="hero">
-      <div className="logo-container">
+      <div className="hero__logo-container">
         <PawticularsLogo className="logo"/>
       </div>
-      <div className="hero-heading-container">
-        <div className="hero-heading">
-          <div className="hero-heading-primary">
+      <div className="hero__heading-container">
+        <div className="heading">
+          <div className="heading--primary">
             pawticulars
           </div>
-          <div className="hero-heading-sub">
+          <div className="heading--sub">
             fosters to the rescue
           </div>
-          <a href="#" className="btn btn-white btn-animated">Learn more</a>
+          <a href="#" className="btn btn--white btn--animated">Learn more</a>
         </div>
       </div>
     </div>

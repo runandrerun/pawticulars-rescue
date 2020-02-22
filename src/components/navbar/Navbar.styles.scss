@@ -1,24 +1,24 @@
 #navbar {
-  height: 70px;
+  height: 7rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
 
   .logo-container {
     height: 100%;
-    padding: 25px;
+    padding: 2.5rem;
     display: inline-block;
     .logo {
       display: inline;
-      width: 50px;
+      width: 5rem;
     }
     .logo-title {
       height: 100%;
       display: inline-block;
       font-size: 3rem;
       font-weight: bold;
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 60rem) {
         display: none;
       }
     }
@@ -31,11 +31,11 @@
     align-items: center;
     justify-content: flex-end;
     .option {
-      font-size: 30px;
+      font-size: 3rem;
       font-weight: 800;
-      padding: 10px 15px;
+      padding: 1rem 1.5rem;
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 60rem) {
       display: none;
     }
   }
