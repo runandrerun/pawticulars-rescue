@@ -9,11 +9,11 @@ const Hero = () => {
         <PawticularsLogo className="logo"/>
       </div>
       <div className="hero__heading-container">
-        <div className="heading">
-          <div className="heading--primary">
+        <div className="heading-primary">
+          <div className="heading-primary--main">
             pawticulars
           </div>
-          <div className="heading--sub">
+          <div className="heading-primary--sub">
             fosters to the rescue
           </div>
           <a href="#" className="btn btn--white btn--animated">Learn more</a>
