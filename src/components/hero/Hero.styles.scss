@@ -2,6 +2,7 @@
 @import '../../_assets/css/abstracts/_mixins.scss';
 @import '../../_assets/css/abstracts/_animations.scss';
 @import '../../_assets/css/components/_button.scss';
+@import '../../_assets/css/base/_typography.scss';
 
 .hero {
   height: 95vh;
@@ -28,28 +29,5 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-
-    .heading {
-      color: $color-white;
-      text-transform: uppercase;
-      font-weight: 400;
-      backface-visibility: hidden;
-
-      &--primary {
-        display: block;
-        font-size: 6rem;
-        letter-spacing: 2.5rem;
-        animation: slideFromLeft 2s ease-out;
-      }
-
-      &--sub {
-        display: block;
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: 1.5rem;
-        animation: slideFromRight 2s ease-out;
-        margin-bottom: 6rem;
-      }
-    }
   }
 }

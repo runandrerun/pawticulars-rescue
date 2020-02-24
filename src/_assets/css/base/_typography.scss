@@ -8,6 +8,29 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  font-weight: 400;
+  backface-visibility: hidden;
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    letter-spacing: 2.5rem;
+    animation: slideFromLeft 2s ease-out;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.5rem;
+    animation: slideFromRight 2s ease-out;
+    margin-bottom: 6rem;
+  }
+}
+
 .heading-secondary {
   display: inline-block;
   font-size: 3.5rem;
@@ -20,6 +43,20 @@
   transition: all 0.4s ease-out;
 
   &:hover {
-    transform: skewY(2deg);
+    transform: skewY(-2deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+  }
+}
+
+.heading-tertiary {
+ font-size: 1.6rem;
+ font-weight: 700;
+ text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
   }
 }

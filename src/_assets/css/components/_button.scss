@@ -7,6 +7,7 @@
     display: inline-block;
     transition: all 0.2s;
     position: relative;
+    font-size: $default-font-size;
 
     &:hover {
       transform: translateY(-.3rem);
@@ -46,5 +47,31 @@
   &--animated {
     animation: slideFromBottom .5s ease-out .75s;
     animation-fill-mode: backwards;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    color: $primary-body-color;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: .1rem solid $primary-body-color;
+    padding: 1rem;
+    font-size: $default-font-size;
+    transition: all 0.4s;
+  }
+
+  &:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    color: $color-white;
+    background-color: $brand-color;
+    border-bottom: .1rem solid $brand-color;
+  }
+
+  &:active {
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
   }
 }
