@@ -1,4 +1,5 @@
 import React from 'react';
+import MiniGallery from '../mini-gallery/MiniGallery.component';
 import './AboutCard.styles.scss';
 
 const AboutCard = () => {
@@ -15,24 +16,20 @@ const AboutCard = () => {
             Rescue Dogs from Transparent, No Kill Rescues
           </h3>
           <p className="paragraph">
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
 
           <h3 className="heading-tertiary margin-bottom-s">
             Foster Dogs until They Find their Forever Home
           </h3>
           <p className="paragraph">
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
 
-          <a href="javascript:void(0);" className="btn-text">Learn more &rarr;</a>
+          <a href="#" className="btn-text">Learn more &rarr;</a>
         </div>
         <div className="col-1-of-2">
-          <div className="image-gallery">
-            <img src="img/nat-1.jpg" alt="" className="image-gallery__image image-gallery__image--i1" />
-            <img src="img/nat-1.jpg" alt="" className="image-gallery__image image-gallery__image--i2" />
-            <img src="img/nat-1.jpg" alt="" className="image-gallery__image image-gallery__image--i3" />
-          </div>
+          <MiniGallery />
         </div>
       </div>
     </div>
