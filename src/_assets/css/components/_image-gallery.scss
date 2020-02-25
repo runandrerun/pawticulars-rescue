@@ -6,6 +6,9 @@
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
     position: absolute;
+    z-index: 10;
+    transition: all 0.4s ease-out;
+    outline-offset: 1.5rem;
 
     &--i1 {
       left: 0;
@@ -13,7 +16,7 @@
     }
 
     &--i2 {
-      left: 0;
+      left: 30%;
       top: 2rem;
     }
 
@@ -21,5 +24,17 @@
       left: 20%;
       top: 10rem;
     }
+
+    &:hover {
+      transform: scale(1.2) translateY(-.5rem);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+      z-index: 20;
+      outline: 1.5rem solid $brand-color;
+    }
+  }
+
+  &:hover &__image:not(:hover) {
+    transform: scale(.8);
+    opacity: .8;
   }
 }
