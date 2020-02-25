@@ -28,7 +28,11 @@ const AboutCard = () => {
           <a href="javascript:void(0);" className="btn-text">Learn more &rarr;</a>
         </div>
         <div className="col-1-of-2">
-         2
+          <div className="image-gallery">
+            <img src="img/nat-1.jpg" alt="" className="image-gallery__image image-gallery__image--i1" />
+            <img src="img/nat-1.jpg" alt="" className="image-gallery__image image-gallery__image--i2" />
+            <img src="img/nat-1.jpg" alt="" className="image-gallery__image image-gallery__image--i3" />
+          </div>
         </div>
       </div>
     </div>
