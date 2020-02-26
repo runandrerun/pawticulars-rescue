@@ -1,10 +1,15 @@
 import React from 'react';
+import './RescueCard.styles.scss';
 
-const RescueCard = ({ rescue }) => {
-  console.log(rescue)
+const RescueCard = () => {
   return (
-    <div id={rescue.id}>
-      {rescue.type}
+    <div className="card">
+      <div className="card__side card__side--front">
+        Front
+      </div>
+      <div className="card__side card__side--back card__side--back-1">
+        Back
+      </div>
     </div>
   );
 };

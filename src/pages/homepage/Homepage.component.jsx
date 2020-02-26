@@ -4,6 +4,7 @@ import Navbar from '../../components/navbar/Navbar.component';
 import Hero from '../../components/hero/Hero.component';
 import AboutCard from '../../components/about-card/AboutCard.component';
 import Features from '../../components/features/Features.component';
+import Rescues from '../../components/rescues/Rescues.component';
 import './Homepage.styles.scss';
 
 const Homepage = () => {
@@ -12,6 +13,7 @@ const Homepage = () => {
       <Hero />
       <AboutCard />
       <Features />
+      <Rescues />
       <RescueList />
     </section>
   );

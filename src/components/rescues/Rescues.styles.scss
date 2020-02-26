@@ -1,0 +1,12 @@
+@import '../../_assets/css/layout/_grid.scss';
+@import '../../_assets/css/abstracts/_variables.scss';
+@import '../../_assets/css/components/_button.scss';
+@import '../../_assets/css/components/_image-gallery.scss';
+@import '../../_assets/css/base/_typography.scss';
+@import '../../_assets/css/utilities/_utilities.scss';
+
+.section-rescues {
+  margin: -10rem auto;
+  padding: 25rem 0 50rem 0;
+  background-color: $gray-back-splash;
+}
