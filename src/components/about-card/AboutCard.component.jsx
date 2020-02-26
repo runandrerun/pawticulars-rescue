@@ -10,10 +10,10 @@ const AboutCard = () => {
           Finding Rescues their Forever Home
         </h2>
       </div>
-      <div className="row left-text">
-        <div className="col-1-of-2">
+      <div className="row center-text">
+        <div className="col-1-of-2 left-text">
           <h3 className="heading-tertiary margin-bottom-s">
-            Rescue Dogs from Transparent, No Kill Rescues
+            Rescue Dogs from Ethical, Transparent Rescues
           </h3>
           <p className="paragraph">
            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

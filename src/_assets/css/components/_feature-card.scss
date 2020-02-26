@@ -1,8 +1,29 @@
-.feature-container {
-  &__icon {
+@import '../abstracts/_variables.scss';
 
+.feature-container {
+  background-color: rgba($color-white, .8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: .3rem;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+  transition: all 0.4s ease-out;
+
+  &__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, $brand-color, $brand-color-dark);
+    -webkit-background-clip: text;
+    color: transparent;
   }
+
   &__copy {
 
+  }
+
+  &:hover {
+    background-color: rgba($color-white, 1);
+    transform: scale(1.1) translateY(-.3rem);
   }
 }

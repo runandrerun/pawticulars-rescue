@@ -1,4 +1,5 @@
 import React from 'react';
+import FeatureCard from '../feature-card/FeatureCard.component';
 import './Features.styles.scss';
 
 const Features = () => {
@@ -6,40 +7,32 @@ const Features = () => {
     <section className="section-features">
       <div className="row">
         <div className="col-1-of-4">
-          <div className="feature-container">
-            <i className="feature-container__icon icon-basic-world"></i>
-            <h3 className="heading-tertiary">Explore</h3>
-            <p className="feature-container__copy">
-              Lorem ipsum
-            </p>
-          </div>
+          <FeatureCard
+            type={"heart"}
+            title={"Love"}
+            copy={"Lorem ipsum"}
+          />
         </div>
         <div className="col-1-of-4">
-          <div className="feature-container">
-            <i className="feature-container__icon icon-basic-world"></i>
-            <h3 className="heading-tertiary">Explore</h3>
-            <p className="feature-container__copy">
-              Lorem ipsum
-            </p>
-          </div>
+          <FeatureCard
+            type={"compass"}
+            title={"Love"}
+            copy={"Lorem ipsum"}
+          />
         </div>
         <div className="col-1-of-4">
-          <div className="feature-container">
-            <i className="feature-container__icon icon-basic-world"></i>
-            <h3 className="heading-tertiary">Explore</h3>
-            <p className="feature-container__copy">
-              Lorem ipsum
-            </p>
-          </div>
+          <FeatureCard
+            type={"world"}
+            title={"Love"}
+            copy={"Lorem ipsum"}
+          />
         </div>
         <div className="col-1-of-4">
-          <div className="feature-container">
-            <i className="feature-container__icon icon-basic-world"></i>
-            <h3 className="heading-tertiary">Explore</h3>
-            <p className="feature-container__copy">
-              Lorem ipsum
-            </p>
-          </div>
+          <FeatureCard
+            type={"heart"}
+            title={"Love"}
+            copy={"Lorem ipsum"}
+          />
         </div>
       </div>
     </section>

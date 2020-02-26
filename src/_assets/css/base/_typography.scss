@@ -45,6 +45,7 @@
   &:hover {
     transform: skewY(-2deg) scale(1.1);
     text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    background-image: linear-gradient(to left, $brand-color, $brand-color-dark);
   }
 }
 
