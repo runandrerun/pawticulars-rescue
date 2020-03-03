@@ -10,14 +10,14 @@ const Rescues = () => {
           Meet Your Local Rescues
         </div>
       </div>
-      <div class="row">
-        <div class="col-1-of-3">
+      <div className="row">
+        <div className="col-1-of-3">
           <RescueCard />
         </div>
-        <div class="col-1-of-3">
+        <div className="col-1-of-3">
           <RescueCard />
         </div>
-        <div class="col-1-of-3">
+        <div className="col-1-of-3">
           <RescueCard />
         </div>
       </div>
